@@ -1,5 +1,13 @@
 const Graph = require('./graph.js')
 
+function helperFunction(testVariable, currentNode, visited, result) {
+  visited[currentNode] = true
+
+  if (testVariable.graph.has(currentNode) == true) {
+    var currentAdjacencyList = testVariable.graph.get(currentNode);
+  }
+}
+
 const myGraph = new Graph(5)
 myGraph.addEdge(0, 1) 
 myGraph.addEdge(0, 3) 
